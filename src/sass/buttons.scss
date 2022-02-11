@@ -1,0 +1,146 @@
+/*=================================================================*/
+/*                     BUTTONS
+/*=================================================================*/
+.btn {
+  border-radius: 100px;
+  font-family: $fontstack;
+  font-size: 14px;
+  font-weight: 400;
+  overflow: hidden;
+  padding: 8.5px 20px;
+  position: relative;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  @include transition(0.3s);
+  i {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn-default {
+  color: #fff;
+  background: $green;
+
+  &:not([href]):not([tabindex]) {
+    color: #fff;
+  }
+
+  &:hover {
+    background: white;
+    color: $green;
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.2);
+
+    &:not([href]):not([tabindex]) {
+      color: $green;
+    }
+  }
+}
+
+.btn-alt {
+  color: #fff;
+  background: $blue;
+
+  &:not([href]):not([tabindex]) {
+    color: #fff;
+  }
+
+  &:hover {
+    color: #fff;
+    background: $green;
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.2);
+
+    &:not([href]):not([tabindex]) {
+      color: #fff;
+    }
+  }
+}
+
+.btn-border {
+  color: #fff;
+  background: $blue;
+
+  &:not([href]):not([tabindex]) {
+    color: #fff;
+  }
+
+  &:hover {
+    color: #fff;
+    background: $black;
+
+    &:not([href]):not([tabindex]) {
+      color: #fff;
+    }
+  }
+}
+
+.btn-border-light {
+  color: #fff;
+  border: solid 1px #fff;
+  background: transparent;
+
+  &:not([href]):not([tabindex]) {
+    color: #fff;
+  }
+  &:hover {
+    color: $blue;
+    background: #fff;
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.2);
+
+    &:not([href]):not([tabindex]) {
+      color: $blue;
+    }
+  }
+}
+
+.btn-full {
+  text-align: center;
+  width: 100%;
+}
+
+.btn-group-lg > .btn,
+.btn-lg {
+  padding: 12px 26px;
+  font-size: 16px;
+}
+
+.btn-sm {
+  padding: 17px 16px;
+  font-size: 12px;
+  line-height: 0;
+}
+
+.btn-xs {
+  padding: 12px 10px;
+  font-size: 12px;
+  line-height: 0;
+}
